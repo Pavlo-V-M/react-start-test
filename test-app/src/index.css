@@ -1,3 +1,21 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +28,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.AppWrap {
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10xp; Чомусь не працює ??? */
+  justify-content: space-around;
+}
+
+.cardWrap {
+  flex-basis: calc((100% - 20px) / 4);
 }

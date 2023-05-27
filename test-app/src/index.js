@@ -16,19 +16,15 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { App } from './App';
+import './index.css';
 
-const imageUrl =
-  "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640";
-const productPrice = 10.99;
-
-const product = (
-  <div>
-    <img src={imageUrl} alt="Tacos With Lime" width="640" />
-    <h2>Tacos With Lime</h2>
-    <p>Price: {productPrice}$</p>
-    <button type="button">Add to cart</button>
-  </div>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
-ReactDOM.createRoot(document.getElementById("root")).render(product);
+// ----------------------------------------------------------
