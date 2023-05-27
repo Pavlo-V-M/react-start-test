@@ -28,6 +28,7 @@ import Product from "./components/module-1/Product";
 import product from "./components/module-1/product.json";
 import Counter from "./components/module-4/Counter";
 import CounterTwo from "./components/module-4/CounterTwo";
+import CounterThird from "./components/module-4/CounterThird";
 
 export const App = () => { 
   return <div className = "AppWrap">
@@ -38,5 +39,6 @@ export const App = () => {
     />
     <Counter />
     <CounterTwo />
+    <CounterThird />
   </div>
 };

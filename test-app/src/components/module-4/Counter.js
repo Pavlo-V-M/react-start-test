@@ -11,7 +11,7 @@ const Counter = () => {
       <button type="button" onClick={() => setValue(value + 1)}>
         Increment value by 1
       </button>
-      <ResetButton resetValue={setValue} />
+      <ResetButton resetValue={setValue} resBtnName="Reset value" />
     </div>
   );
 };

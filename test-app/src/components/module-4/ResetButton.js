@@ -1,6 +1,6 @@
 
 const ResetButton = (props) => {
-  const { resetValue } = props;
+  const { resetValue, resBtnName } = props;
   
   const handleReset = () => {
     resetValue(0);
@@ -10,7 +10,7 @@ const ResetButton = (props) => {
     <button
       type="button"
       onClick={handleReset}>
-      Reset
+      {resBtnName}
     </button>
   );
 };

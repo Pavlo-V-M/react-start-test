@@ -13,7 +13,7 @@ const CounterTwo = () => {
     <div className={css.cardWrap}>
       <p>You clicked {value} times</p>
       <button onClick={() => setValue(value + 1)}>Click me</button>
-      <ResetButton resetValue={setValue} />
+      <ResetButton resetValue={setValue} resBtnName="Reset click" />
     </div>
   );
 };
